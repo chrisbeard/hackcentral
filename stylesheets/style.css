@@ -54,10 +54,10 @@ h3 {
 	font-size: 0.9em;
 	padding: 0.9em;
 }
-.schedule-table tbody tr: nth-child(even) {
+.schedule-table tbody tr:nth-child(even) {
 	border-bottom: 1px solid #eeedeb;
 	border-top: 1px solid #eeedeb;
-	background: #faf8f4;
+	background-color: #555555;
 }
 .schedule-table thead: first-child .schedule-table-date td {
 	padding-top: 0em;
