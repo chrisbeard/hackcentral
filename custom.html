@@ -17,27 +17,48 @@
 </head>
 <body>
 	<section id="header" class="header">
-		<img class="logo" src="images/logo.png">
+		<h1 class="logo">HC</h1>
 		<h2>Launch your hackcentral page.</h3>
 		<hr>
 	</section>
 
+	<section id="info" class="info">
+		<h3 class="info-title">It's easy!</h3>
+		<p class="info-content">All you need to do is enter your hackathon's information. We'll put everything into our templates, style everything for you, and present you with a landing page for your hackathon.</p>
+	</section>
+
 	<center>
 	<br>
-	<form action="gen.php" method="post" class="input-form">
-		<h3>General Info</h3>
-		School: <input type="text" name="school"><br><br>
-		Twitter: <input type="text" name="handle"><br><br>
-		Twitter Widget Key: <input type="text" name="key"><br><br>
-		Spotify: <input type="text" name="spotify"><br><br>
-		<h3>Event End</h3>
-		month: <input type="text" maxlength="2" name="month">
-		day: <input type="text" maxlength="2"  name="day">
-		year: <input type="text" maxlength="4"  name="year">
-		hour (24-hr time): <input type="text" name="time"><br><br>
-		<input type="submit" name="submit" class="generate-button" value="Hack">
-	</form>
+	<div class="create-form">
+		<form action="gen.php" method="post" class="input-form">
+			<h3>General Info</h3>
+			<input type="text" class="textbox" name="school" placeholder="School">
+			<input type="text" class="textbox" name="handle" placeholder="Twitter">
+			<input type="text" class="textbox" name="key" placeholder="Twitter Widget Key">
+			<input type="text" class="textbox" name="spotify" placeholder="Spotify">
+			<h3>Event End</h3>
+			month: <input type="text" maxlength="2"  name="month">
+			day: <input type="text" maxlength="2"  name="day">
+			year: <input type="text" maxlength="4"  name="year">
+			hour (24-hr time): <input type="text" name="time"><br><br>
+			<input type="submit" name="submit" class="generate-button" value="Hack">
+		</form>
+	</div>
 
+	<div class="mainselection">
+	<select name="State" id="input7">
+	    <option></option>
+	    <option value="0">January</option>
+	    <option value="1">February</option>
+	    <option value="2">Mach</option>
+	    <option value="3">April</option>  
+	    <option value="4">May</option>  
+	    <option value="5">June</option>  
+	    <option value="6">July</option>  
+	    <option value="7">August</option>  
+	    <option value="8">September</option>                           
+	</select>
+	</div>
 
 </body>
 </html>
