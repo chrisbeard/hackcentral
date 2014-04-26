@@ -9,7 +9,7 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="stylesheets/normalize.min.css">
-	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="stylesheets/custom.css">
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
 	<link rel="icon" href="images/favicon.ico">
@@ -17,8 +17,8 @@
 </head>
 <body>
 	<section id="header" class="header">
-		<img class="bearcat" src="images/logo.png">
-		<h3><center>Launch your own hackcentral page.</h3>
+		<img class="logo" src="images/logo.png">
+		<h3>Launch your own hackcentral page.</h3>
 		<hr>
 	</section>
 
@@ -29,6 +29,10 @@
 		twitter: <input type="text" name="handle"><br><br>
 		widget key: <input type="text" name="key"><br><br>
 		spotify: <input type="text" name="spot"><br><br>
+		end month: <input type="text" maxlength="2" size="2" name="month">
+		end day: <input type="text" maxlength="2" size="2" name="day">
+		end year: <input type="text" maxlength="4" size="4" name="year">
+		end hour (24-hr time): <input type="text" maxlength="2" size="2" name="time"><br><br>
 		<input type="submit" name="submit" value="Hack">
 	</form>
 
