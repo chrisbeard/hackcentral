@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>hackcentral</title>
+	<title>hackcentral</title>
 
-    <meta charset="utf-8">
-  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  	<meta name="viewport" content="width=device-width">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
 
-    <!-- CSS -->
-  	<link rel="stylesheet" href="stylesheets/normalize.min.css">
-  	<link rel="stylesheet" href="stylesheets/style.css">
+	<!-- CSS -->
+	<link rel="stylesheet" href="stylesheets/normalize.min.css">
+	<link rel="stylesheet" href="stylesheets/style.css">
 
-  	<!-- <link rel="icon" href="favicon.png"> -->
+	<!-- <link rel="icon" href="favicon.png"> -->
 
-  	<!-- Javascript -->
-  	<script language="JavaScript" src="counter.js"></script>
-    <script language="JavaScript">
-		TargetDate = "04/26/2014 8:00 PM";
-		BackColor = false;
-		ForeColor = "white";
-		CountActive = true;
-		CountStepper = -1;
-		LeadingZero = false;
-		DisplayFormat = "%%H%% hours, %%M%% minutes, %%S%% seconds until we can sleep.";
-		FinishMessage = "All done. Go sleep!";
-	</script>
-
+	<!-- Javascript -->
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+	<script src="js/countdown.js"></script>  
+
 
 </head>
 <body>
-    <h1>HackBU!</h1>
+	
+	<h1>HackBU!</h1>
+	<hr>
 
-   <div id="wrap">
 
-   
-     <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/Trombeard" data-widget-id="459866668701736960">Tweets by @Trombeard</a>
-
+	<div class="timer">
+		<h2 class="timer-title">Hackathon Timer:</h2>
+		<h3 id="countdown-holder"></h3>
 	</div>
+
+
+	<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/Trombeard" data-widget-id="459866668701736960">Updates from @Trombeard</a>
+
+
+	<script>  
+		var clock = document.getElementById("countdown-holder");
+		var targetDate = new Date(2014, 03, 26);
+		targetDate = targetDate.setHours(20);
+
+		clock.innerHTML = countdown(targetDate).toString();  
+		setInterval(function(){  
+			clock.innerHTML = countdown(targetDate).toString();  
+		}, 1000);  
+	</script>
 
 </body>
 </html>
