@@ -40,7 +40,7 @@ if(isset($_POST['submit'])) {
 
 
 		</h1>
-		<img class="bearcat" src="images/bearcat.png">
+		<img class="bearcat" src="<?php echo $_POST['logo']; ?>">
 		<hr>
 	</section>
 
