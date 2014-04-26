@@ -35,12 +35,12 @@
 
 	<section id="timer" class="timer">
 		<h2 class="timer-title">Time Remaining</h2>
-		<h3 id="countdown-holder"></h3>
+		<h3 id="countdown-holder" class="countdown-text"></h3>
 	</section>
 
 	<section id="schedule" class="schedule">
 		<hr class="top">
-		<h2 class="title">Schedule</h2>
+		<h2 class="schedule-title">Schedule</h2>
 
 		<table class="schedule-table">
 			<thead>
@@ -117,11 +117,11 @@
 		<h2 class="title">Updates</h2>
 		<script>
 			if(navigator.userAgent.match(/iPhone|Android/i)){
-		 		document.write("<a class=\"twitter-timeline\"data-dnt=\"true\" href=\"https://twitter.com/HackBinghamton\" data-widget-id=\"459917415321567232\" data-tweet-limit=\"5\">Updates from @HackBinghamton</a>");
+		 		document.write("<a class=\"twitter-timeline\"data-dnt=\"true\" href=\"https://twitter.com/HackBinghamton\" data-widget-id=\"459917415321567232\" data-tweet-limit=\"3\">Updates from @HackBinghamton</a>");
 
 			}
 			else {
-				document.write("<a class=\"twitter-timeline\" data-dnt=\"true\" href=\"https://twitter.com/HackBinghamton\" data-widget-id=\"459917415321567232\">Tweets by @HackBinghamton</a>");
+				document.write("<a class=\"twitter-timeline\" data-dnt=\"true\" href=\"https://twitter.com/HackBinghamton\" data-widget-id=\"459917415321567232\" data-theme=\"light\">Tweets by @HackBinghamton</a>");
 			}
 		</script>
 	</section>
