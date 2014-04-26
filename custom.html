@@ -19,46 +19,93 @@
 	<section id="header" class="header">
 		<h1 class="logo">HC</h1>
 		<h2>Launch your hackcentral page.</h3>
-		<hr>
 	</section>
 
 	<section id="info" class="info">
 		<h3 class="info-title">It's easy!</h3>
-		<p class="info-content">All you need to do is enter your hackathon's information. We'll put everything into our templates, style everything for you, and present you with a landing page for your hackathon.</p>
+		<p class="info-content">All you need to do is enter your hackathon's information. We'll put everything together, style your content for you, and present you with a landing page for your hackathon.</p>
 	</section>
 
 	<center>
 	<br>
 	<div class="create-form">
 		<form action="gen.php" method="post" class="input-form">
-			<h3>General Info</h3>
+			<h3 class="input-title">General Info</h3>
 			<input type="text" class="textbox" name="school" placeholder="School">
 			<input type="text" class="textbox" name="logo" placeholder="Logo url">
 			<input type="text" class="textbox" name="handle" placeholder="Twitter">
 			<input type="text" class="textbox" name="key" placeholder="Twitter Widget Key">
 			<input type="text" class="textbox" name="spotify" placeholder="Spotify">
-			<h3>Event End</h3>
-			month: <input type="text" maxlength="2"  name="month">
+			
+			<div class="drop-all">
+				<h3 class="input-title">Event End</h3>
+				<select name="State" id="month" class="dropdown">
+				    <option>Month</option>
+				    <option value="0">January</option>
+				    <option value="1">February</option>
+				    <option value="2">Mach</option>
+				    <option value="3">April</option>  
+				    <option value="4">May</option>  
+				    <option value="5">June</option>  
+				    <option value="6">July</option>  
+				    <option value="7">August</option>  
+				    <option value="8">September</option>
+				    <option value="9">October</option> 
+				    <option value="10">November</option> 
+				    <option value="11">December</option>                    
+				</select>
+
+				<select name="State" id="month" class="dropdown">
+				    <option>Day</option>
+				    <option value="1">1</option>
+				    <option value="2">2</option>
+				    <option value="3">3</option> 
+				    <option value="4">4</option> 
+				    <option value="5">5</option> 
+				    <option value="6">6</option> 
+				    <option value="7">7</option> 
+				    <option value="8">8</option>
+				    <option value="9">9</option>
+				    <option value="10">10</option>
+				    <option value="11">11</option>
+				    <option value="12">12</option>
+				    <option value="13">13</option> 
+				    <option value="14">14</option> 
+				    <option value="15">15</option> 
+				    <option value="16">16</option> 
+				    <option value="17">17</option> 
+				    <option value="18">18</option>
+				    <option value="19">19</option>
+				    <option value="20">20</option>
+				    <option value="21">21</option>
+				    <option value="22">22</option>
+				    <option value="23">23</option>  
+				    <option value="24">24</option>  
+				    <option value="25">25</option>  
+				    <option value="26">26</option>  
+				    <option value="27">27</option>  
+				    <option value="28">28</option>
+				    <option value="29">29</option> 
+				    <option value="30">20</option> 
+				    <option value="31">31</option>  
+				</select>
+
+				<select name="State" id="year" class="dropdown">
+				    <option>Year</option>
+				    <option value="2014">2014</option>
+				    <option value="2015">2015</option>
+				</select>
+			</div>
+			<!-- month: <input type="text" maxlength="2"  name="month">
 			day: <input type="text" maxlength="2"  name="day">
 			year: <input type="text" maxlength="4"  name="year">
-			hour (24-hr time): <input type="text" name="time"><br><br>
-			<input type="submit" name="submit" class="generate-button" value="Hack">
+			hour (24-hr time): <input type="text" name="time"><br><br> -->
+			<input type="submit" name="submit" class="generate-button" value="Set up my Hack">
 		</form>
 	</div>
 
 	<div class="mainselection">
-	<select name="State" id="input7">
-	    <option></option>
-	    <option value="0">January</option>
-	    <option value="1">February</option>
-	    <option value="2">Mach</option>
-	    <option value="3">April</option>  
-	    <option value="4">May</option>  
-	    <option value="5">June</option>  
-	    <option value="6">July</option>  
-	    <option value="7">August</option>  
-	    <option value="8">September</option>                           
-	</select>
+	
 	</div>
 
 </body>
