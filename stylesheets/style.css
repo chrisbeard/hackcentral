@@ -1,7 +1,14 @@
 h1 {
 	font-size: 3.2em;
-	margin: .5em 0;
+	margin: 1em 0 .5em 0;
 	text-align: center;
+}
+
+.bearcat {
+	display: block;
+	height: 300px;
+	width: 300px;
+	margin: 0 auto;
 }
 
 h2 {
@@ -37,7 +44,7 @@ h3 {
 }
 
 body {
-	background-color: #333555;
+	background-color: #333333;
 	color: white;
 }
 
