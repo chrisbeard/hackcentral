@@ -28,7 +28,7 @@ h2 {
 }
 
 .timer-remaining {
-	font-size: 1em;
+	font-size: .8em;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0 0 20px;
 	color: #555555;
