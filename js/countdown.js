@@ -379,9 +379,9 @@ function(module) {
 			return '';
 		}
 		if (count > 1) {
-			label[count-1] = 'and '+label[count-1];
+			label[count-1] = ' '+label[count-1];
 		}
-		return label.join(', ');
+		return label.join(' ');
 	};
 
 	/**
@@ -404,9 +404,9 @@ function(module) {
 			label[i] = '<'+tag+'>'+label[i]+'</'+tag+'>';
 		}
 		if (--count) {
-			label[count] = 'and '+label[count];
+			label[count] = ' '+label[count];
 		}
-		return label.join(', ');
+		return label.join(' ');
 	};
 
 	/**
@@ -1137,8 +1137,8 @@ function(module) {
 	 * @public
 	 */
 	var resetLabels = countdown.resetLabels = function() {
-		LABELS_SINGLUAR = 'millisecond|second|minute|hour|day|week|month|year|decade|century|millennium'.split('|');
-		LABELS_PLURAL = 'milliseconds|seconds|minutes|hours|days|weeks|months|years|decades|centuries|millennia'.split('|');
+		LABELS_SINGLUAR = 'millisecond|sec|min|hr|d|wk|mo|yr|decade|century|millennium'.split('|');
+		LABELS_PLURAL = 'milliseconds|secs|mins|hrs|ds|wks|mos|yrs|decades|centuries|millennia'.split('|');
 	};
 
 	resetLabels();
