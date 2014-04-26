@@ -160,7 +160,7 @@ if(isset($_POST['submit'])) {
 
 	<!-- Scripts at end -->
 	<script>  
-		var month = "<?php echo ($_POST['month'] - 1) ?>";
+		var month = "<?php echo $_POST['month'] ?>";
 		var day = "<?php echo $_POST['day'] ?>";
 		var year = "<?php echo $_POST['year'] ?>";
 		var time = "<?php echo $_POST['time'] ?>";
