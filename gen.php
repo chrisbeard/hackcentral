@@ -45,8 +45,8 @@ if(isset($_POST['submit'])) {
 	</section>
 
 	<section id="timer" class="timer">
-		<h2 class="timer-title">Time Remaining</h2>
 		<h3 id="countdown-holder" class="countdown-text"></h3>
+		<h2 class="timer-title">REMAINING</h2>
 	</section>
 
 	<section id="schedule" class="schedule">
