@@ -10,10 +10,9 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="stylesheets/normalize.min.css">
 	<link rel="stylesheet" href="stylesheets/style.css">
-
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
 	<link rel="icon" href="images/favicon.ico">
-
 
 	<!-- Javascript -->
 	<!-- ********** -->
@@ -41,7 +40,7 @@
 
 	<section id="schedule" class="schedule">
 		<hr class="top">
-		<h2 class="schedule-title">Schedule</h2>
+		<h2 class="title">Schedule</h2>
 
 		<table class="schedule-table">
 			<thead>
@@ -114,18 +113,21 @@
 	<div class="contacts">
 	</div>
 	
-	<script>
-		if(navigator.userAgent.match(/iPhone|Android/i)){
-	 		// document.write("<a class=\"twitter-timeline\" data-dnt=\"true\" href=\"https://twitter.com/HackBinghamton\" data-widget-id=\"459917415321567232\" data-tweet-limit=\"5\">Updates from @HackBinghamton</a>");
+	<section id="twitter" class="twitter">
+		<h2 class="title">Updates</h2>
+		<script>
+			if(navigator.userAgent.match(/iPhone|Android/i)){
+		 		document.write("<a class=\"twitter-timeline\"data-dnt=\"true\" href=\"https://twitter.com/HackBinghamton\" data-widget-id=\"459917415321567232\" data-tweet-limit=\"5\">Updates from @HackBinghamton</a>");
 
-		}
-		else {
-			document.write("<a class=\"twitter-timeline\" data-dnt=\"true\" href=\"https://twitter.com/HackBinghamton\" data-widget-id=\"459917415321567232\">Tweets by @HackBinghamton</a>");
-		}
-	</script>
+			}
+			else {
+				document.write("<a class=\"twitter-timeline\" data-dnt=\"true\" href=\"https://twitter.com/HackBinghamton\" data-widget-id=\"459917415321567232\">Tweets by @HackBinghamton</a>");
+			}
+		</script>
+	</section>
 
 
-	<iframe src="https://embed.spotify.com/?uri=spotify:user:122041340:playlist:3zWJbXPDy9mxbXg9z1aUjo" height="600" frameborder="0" allowtransparency="true" class="spotify"></iframe>
+	<!-- <iframe src="https://embed.spotify.com/?uri=spotify:user:122041340:playlist:3zWJbXPDy9mxbXg9z1aUjo" height="600" frameborder="0" allowtransparency="true" class="spotify"></iframe> -->
 
 
 	<!-- Scripts at end -->
