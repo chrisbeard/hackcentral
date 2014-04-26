@@ -71,6 +71,7 @@ h2 {
 	max-width: 40em;
 }
 .schedule-table td {
+	font-family: 'Open Sans', sans-serif;
 	font-size: 0.9em;
 	padding: 0.9em;
 }
