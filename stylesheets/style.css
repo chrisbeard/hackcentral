@@ -1,6 +1,6 @@
 h1 {
 	font-size: 3.2em;
-	margin: 1em 0 .5em 0;
+	margin: 1em 0 1em 0;
 	text-align: center;
 }
 
@@ -9,10 +9,11 @@ h1 {
 	height: 300px;
 	width: 300px;
 	margin: 0 auto;
+	padding-bottom: 1em;
 }
 
 h2 {
-	font-size: 1.8em;
+	font-size: 2em;
 	line-height: 1.1em;
 	/*margin: .4em;*/
 }
@@ -22,9 +23,54 @@ h3 {
 }
 
 .timer {
+	background: white;
 	text-align: center;
-	color: #CCCCCC;
+	/*color: #CCCCCC;*/
+	color: black;
 	padding: 2em 0 2em;
+}
+
+.top {
+	margin: -8px;
+}
+
+.schedule {
+	padding: 1em 0 0;
+	display: block;
+	/*text-align: center;*/
+	float: center;
+}
+.schedule-title {
+	text-align: center;
+	font-size: 2em;
+	padding-top: 1em;
+}
+.schedule-table {
+	margin: 1em auto;
+	width: 100%;
+	max-width: 40em;
+}
+.schedule-table td {
+	font-size: 0.9em;
+	padding: 0.9em;
+}
+.schedule-table tbody tr: nth-child(even) {
+	border-bottom: 1px solid #eeedeb;
+	border-top: 1px solid #eeedeb;
+	background: #faf8f4;
+}
+.schedule-table thead: first-child .schedule-table-date td {
+	padding-top: 0em;
+}
+.schedule-table-date {
+	border-bottom: 1px solid #ddd;
+	font-size: 1.5em;
+	font-weight: 700;
+	text-align: center;
+}
+.schedule-table-date td {
+	padding-bottom: 1em;
+	padding-top: 1em;
 }
 
 .twitter-timeline {
