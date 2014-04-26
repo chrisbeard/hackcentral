@@ -20,7 +20,7 @@ h2 {
 	font-family: Lato, sans-serif;
 }
 
-h3 {
+.countdown-text {
 	font-size: 1.5em;
 	font-family: Lato, sans-serif;
 }
@@ -33,6 +33,12 @@ h3 {
 	padding: 2em 0 2em;
 }
 
+.title {
+	text-align: center;
+	font-size: 2em;
+	padding-top: 1em;
+}
+
 .top {
 	margin: -8px;
 }
@@ -43,10 +49,11 @@ h3 {
 	/*text-align: center;*/
 	float: center;
 }
-.title {
+.schedule-title {
 	text-align: center;
 	font-size: 2em;
 	padding-top: 1em;
+	margin-bottom: -.5em;
 }
 .schedule-table {
 	margin: 1em auto;
@@ -71,14 +78,16 @@ h3 {
 	font-weight: 700;
 	text-align: center;
 	font-family: Lato, sans-serif;
+	/*margin-top: 1.5em;*/
 }
 .schedule-table-date td {
 	padding-bottom: 1em;
-	padding-top: 1em;
+	padding-top: 2em;
 }
 
 .twitter {
 	text-align: center;
+	padding-bottom: 1em;
 	/*background: white;
 	color: black;*/
 }
@@ -106,17 +115,19 @@ body {
 }
 
 @media (max-width: 768px) { 
+	.countdown-text {
+		font-size: 1.1em;
+	}
+
 	.twitter-timeline {
-		width: 90%;
-		padding: 0 15px 0 15px;
-		/*border-bottom: 5px;*/
-		display: block;
-		/*padding: 10px 5% 5px 5%;*/
+		width: 280px;
+		/*width: 90%;*/
+		float: center;
+		margin: 0 auto;
 	}
 
 	.spotify {
-		width: 90%;
-		/*min-width: 500px;*/
+		width: 98%;
 		display: block;
 		padding: 0 15px 10px 15px;
 	}
