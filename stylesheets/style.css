@@ -5,13 +5,19 @@ h1 {
 	padding-bottom: 1em;
 }
 
+#wrap {}
+
 .countdown {
 	text-align: center;
+	display: block;
+	width: 50%;
+	float: left;
 }
 
 .twitter-timeline {
-	display: inline-block;
 	/*padding-left: 1em;*/
+	width: 50%;
+	float: right;
 }
 
 body {
