@@ -151,9 +151,10 @@ if(isset($_POST['submit'])) {
 		</script>
 	</section>
 
-
-	<iframe src="https://embed.spotify.com/?uri=<?php echo $_POST['spotify'] ?>" height="600" frameborder="0" allowtransparency="true" class="spotify"></iframe>
-
+	<section id="spotify" class="spotify">
+		<h2 class="title">Check out our Playlist</h2>
+		<iframe src="https://embed.spotify.com/?uri=<?php echo $_POST['spotify'] ?>" height="600" frameborder="0" allowtransparency="true" class="spotify"></iframe>
+	</section>
 
 <!-- DATE AND TIME INJECTIONS -->
 
