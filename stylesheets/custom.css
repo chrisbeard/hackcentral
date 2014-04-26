@@ -1,13 +1,16 @@
 .header {
 	text-align: center;
+	background: #23455B;
+	background: linear-gradient(rgba(35, 69, 91, 0.6), rgba(35, 69, 91, 1));
 }
 
 .logo {
+	font-family: Lato, sans-serif;
+	text-align: center;
+	font-size: 15em;
 	display: block;
-	height: 300px;
-	width: 300px;
+	padding-top: .5em;
 	margin: 0 auto;
-	padding-bottom: 1em;
 }
 
 h2 {
@@ -15,17 +18,41 @@ h2 {
 	line-height: 1.1em;
 	/*margin: .4em;*/
 	font-family: Lato, sans-serif;
+	padding: 1em 0;
 }
 
-.text {
-    
+.info {
+	text-align: center;
 }
 
-body {
-	background-color: #333333;
-	color: white;
-	font-family: Lora, serif;
+.info-title {
+	font-size: 1.8em;
 }
+
+.info-content {
+	max-width: 700px;
+	font-size: 1.4em;
+	font-weight: lighter;
+	line-height: 1.3em;
+	margin: 0 auto;
+	text-align: center;
+	font-family: Lato, sans-serif;
+}
+
+.textbox {
+    background: #eeeeee;
+	border: 1px solid #777777;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #777777 inset;
+	color: #333333;
+	padding: 7px 10px; 
+	width: 400px; 
+	outline: none;
+	display: block;
+	margin: 1em;
+}
+
+
 
 .generate-button {
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -47,7 +74,7 @@ body {
 	font-weight:bold;
 	font-style:normal;
 	height:37px;
-	line-height:37px;
+	/*line-height:30px;*/
 	width:100px;
 	text-decoration:none;
 	text-align:center;
@@ -64,4 +91,10 @@ body {
 
 .input-form {
 	padding-bottom: 2em;
+}
+
+body {
+	background-color: #333333;
+	color: white;
+	font-family: Lora, serif;
 }
