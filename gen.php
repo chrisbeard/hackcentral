@@ -39,9 +39,9 @@ if(isset($_POST['submit'])) {
 ?>
 
 
-		</h1>
-		<img class="bearcat" src="<?php echo $_POST['logo']; ?>">
-		<hr>
+	</h1>
+	<img class="bearcat" src="<?php echo $_POST['logo']; ?>">
+	<hr>
 	</section>
 
 	<section id="timer" class="timer">
