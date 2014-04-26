@@ -72,6 +72,7 @@ h2 {
 	border: 1px solid #aaaaaa;
 	border-radius: 8px;
 	color: #333333;
+	margin: 0 2px;
 }
 
 .generate-button {
@@ -81,7 +82,7 @@ h2 {
 	/*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );*/
 	/*background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );*/
 	/*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');*/
-	/*background-color:#dddddd;*/
+	background-color:#dddddd;
 	-webkit-border-radius:8px;
 	-moz-border-radius:8px;
 	border-radius:8px;
