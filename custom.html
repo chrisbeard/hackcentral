@@ -18,22 +18,24 @@
 <body>
 	<section id="header" class="header">
 		<img class="logo" src="images/logo.png">
-		<h3>Launch your own hackcentral page.</h3>
+		<h2>Launch your hackcentral page.</h3>
 		<hr>
 	</section>
 
 	<center>
 	<br>
-	<form action="gen.php" method="post">
-		school: <input type="text" name="school"><br><br>
-		twitter: <input type="text" name="handle"><br><br>
-		widget key: <input type="text" name="key"><br><br>
-		spotify: <input type="text" name="spot"><br><br>
-		end month: <input type="text" maxlength="2" size="2" name="month">
-		end day: <input type="text" maxlength="2" size="2" name="day">
-		end year: <input type="text" maxlength="4" size="4" name="year">
-		end hour (24-hr time): <input type="text" maxlength="2" size="2" name="time"><br><br>
-		<input type="submit" name="submit" value="Hack">
+	<form action="gen.php" method="post" class="input-form">
+		<h3>General Info</h3>
+		School: <input type="text" name="school"><br><br>
+		Twitter: <input type="text" name="handle"><br><br>
+		Twitter Widget Key: <input type="text" name="key"><br><br>
+		Spotify: <input type="text" name="spotify"><br><br>
+		<h3>Event End</h3>
+		month: <input type="text" maxlength="2" name="month">
+		day: <input type="text" maxlength="2"  name="day">
+		year: <input type="text" maxlength="4"  name="year">
+		hour (24-hr time): <input type="text" name="time"><br><br>
+		<input type="submit" name="submit" class="generate-button" value="Hack">
 	</form>
 
 
