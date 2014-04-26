@@ -147,25 +147,31 @@ if(isset($_POST['submit'])) {
 
 				document.write(urlbegin.concat(handle,urlmid,key,urlend));
 
-				//document.write("<a class=\"twitter-timeline\" data-dnt=\"true\" href=\"https://twitter.com/HackBinghamton\" data-widget-id=\"459917415321567232\" data-theme=\"light\">Tweets by @HackBinghamton</a>");
 			}
 		</script>
 	</section>
 
 
-<iframe src="https://embed.spotify.com/?uri=spotify:user:122041340:playlist:3zWJbXPDy9mxbXg9z1aUjo" height="600" frameborder="0" allowtransparency="true" class="spotify"></iframe>
+	<iframe src="https://embed.spotify.com/?uri=<?php echo $_POST['spotify'] ?>" height="600" frameborder="0" allowtransparency="true" class="spotify"></iframe>
 
+
+<!-- DATE AND TIME INJECTIONS -->
 
 	<!-- Scripts at end -->
 	<script>  
-		var clock = document.getElementById("countdown-holder");
-		var targetDate = new Date(2014, 03, 26);
-		targetDate = targetDate.setHours(20);
+		var month = "<?php echo ($_POST['month'] - 1) ?>";
+		var day = "<?php echo $_POST['day'] ?>";
+		var year = "<?php echo $_POST['year'] ?>";
+		var time = "<?php echo $_POST['time'] ?>";
+
+var clock = document.getElementById("countdown-holder");
+		var targetDate = new Date(year, month, day);
+		targetDate = targetDate.setHours(time);
 
 		clock.innerHTML = countdown(targetDate).toString();  
 		setInterval(function(){  
 			clock.innerHTML = countdown(targetDate).toString();  
-		}, 1000);  
+		}, 1000); 
 	</script>
 </body>
 </html>
