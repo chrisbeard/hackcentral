@@ -1,11 +1,12 @@
 h1 {
 	font-size: 3.2em;
-	margin: 1em 0;
+	margin: .5em 0;
 	text-align: center;
 }
 
 h2 {
 	font-size: 1.8em;
+	line-height: 1.1em;
 	/*margin: .4em;*/
 }
 
@@ -18,13 +19,20 @@ h3 {
 	color: #CCCCCC;
 }
 
-
 .twitter-timeline {
-	/*width: 40%;*/
-	min-width: 500px;
+	width: 48%;
+	/*min-width: 500px;*/
 	float: left;
-	padding-left: 15px;
-	margin: 15px 0;
+	margin: .3em 0 .15em 1em;
+}
+
+.spotify {
+	width: 48%;
+	/*min-width: 500px;*/
+	float: right;
+	/*padding-right: 15px;*/
+	/*padding: 0px 15px 0 15px;*/
+	margin: .3em 1 .15em 0;
 }
 
 body {
@@ -32,3 +40,19 @@ body {
 	color: white;
 }
 
+@media (max-width: 768px) { 
+	.twitter-timeline {
+		width: 90%;
+		padding: 0 15px 0 15px;
+		/*border-bottom: 5px;*/
+		display: block;
+		/*padding: 10px 5% 5px 5%;*/
+	}
+
+	.spotify {
+		width: 90%;
+		/*min-width: 500px;*/
+		display: block;
+		padding: 0 15px 10px 15px;
+	}
+}
