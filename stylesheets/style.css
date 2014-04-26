@@ -44,7 +44,7 @@ h2 {
 }
 
 .schedule {
-	padding: 1em 0 2em;
+	padding: 1em 0 0;
 	display: block;
 	/*text-align: center;*/
 	float: center;
@@ -84,11 +84,14 @@ h2 {
 	padding-bottom: 1em;
 	padding-top: 2em;
 }
+.schedule-hr {
+	margin: 8px;
+}
 
 .twitter {
 	text-align: center;
-	padding-bottom: 1em;
-	background: #132221;
+	padding-bottom: 0em;
+	/*background: #09152E;*/
 	/*background: white;
 	color: black;*/
 }
